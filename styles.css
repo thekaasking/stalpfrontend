@@ -1,0 +1,50 @@
+body {
+    font-family: Montserrat, sans-serif;
+    color: #333;
+    background-color: #f2f2f2;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    flex-wrap: wrap; /* Maak de kolommen responsief */
+}
+
+h1 {
+    color: #0066cc;
+    text-align: center;
+    width: 100%;
+}
+
+.column {
+    width: 50%;
+    padding: 20px; /* Voeg padding toe aan de kolommen */
+    box-sizing: border-box; /* Zorg ervoor dat de padding de breedte van de kolom niet beïnvloedt */
+}
+
+.column h2 {
+    color: #009966;
+}
+
+.column p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    height: 200px; /* Stel een vaste hoogte in voor de rijen */
+    overflow: auto; /* Voeg een scrollbar toe als de inhoud groter is dan de vaste hoogte */
+}
+
+#overlay {
+    position: fixed;
+    /* center horizontally in the screenheight */
+    top: 30vh; 
+    right: 0;
+    height: 50vh;
+    width: calc(50vh * 9 / 18);
+    overflow: hidden;
+}
